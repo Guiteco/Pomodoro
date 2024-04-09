@@ -19,7 +19,6 @@ function verificaTempoAtivo(){
     for(let i of btns){
         if(i.classList.contains('active')){
             tempoSelecionado = tempos[i.classList[1]]
-            console.log(tempos[i.classList[1]])
             tempoSegundos = (tempoSelecionado *60) 
     }
 }
