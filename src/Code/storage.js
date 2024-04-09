@@ -19,7 +19,7 @@ function timer(){
 }
 function alterarBackground(){
     let imagem = optionTheme.value
-    body.style.backgroundImage =`url(/Pomodoro/src/img/${imagem}.jpg)`;
+    body.style.backgroundImage =`url(./src/img/${imagem}.jpg)`;
     localStorage.setItem("fundo",imagem)
 }
 
