@@ -102,7 +102,9 @@ if(JSON.parse(localStorage.getItem("historico"))){
      historico = JSON.parse(localStorage.getItem("historico"))
      valoreNaExibicaoDoHistorico(historico)
 }else{
-    
+    historico.pomodoro = 0
+    historico.shortBreak = 0
+    historico.longBreak = 0
      valoreNaExibicaoDoHistorico(historico)
 }
 
