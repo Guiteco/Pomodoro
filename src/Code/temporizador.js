@@ -77,10 +77,14 @@ function atualizaTitle (tempo){
 }
 atualizaTitle (tempoSegundos);
 
+let historico = {};
 let ultimoValor = 0;
 
 function historicoTempos(){
-    historico[tagSelecionada.classList[1]] += tempoPassado
+        if(  historico[tagSelecionada.classList[1]] == null){
+        historico[tagSelecionada.classList[1]] = 0;
+    }
+    historico[tagSelecionada.classList[1]] +=tempoPassado;
 
     valoreNaExibicaoDoHistorico(historico)
     localStorage.setItem("historico",JSON.stringify(historico))
